@@ -1,0 +1,68 @@
+body{
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family: "Nome da Fonte", sans-serif;
+}
+
+h1{
+    margin-left: 46%;
+    top: 0;
+}
+
+#logo{
+    width: 8%;   
+    top: 0;
+}
+
+form {
+    width: 400px;
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .enviar{
+    color: white;
+    background-color: #ffbb00;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="nick"]
+  input[type="tipoArt"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  #myTextarea {
+    resize: none; 
+    max-height: 6em; 
+  }
+
+  #jaTenhoConta {
+    background-color: #ffbb00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }  
+
+  
+@media (width < 1366px) {
+  article{
+      margin-left: 210px;
+  }
+}

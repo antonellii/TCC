@@ -1,0 +1,400 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: "Nome da Fonte", sans-serif;
+}
+
+/*Sidebar*/
+aside {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    height: 100%;
+    align-items: flex-start;
+    width: 200px;
+    padding: 0;
+    transition: all 0.50s;
+}
+
+#logo {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    min-height: 35px;
+    margin-left: -5px;
+}
+.titulosP{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+
+.links button {
+    list-style-type: none;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.links button>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 48px;
+    padding: 7px 16px 0 9px;
+    border-radius: 24px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.links button>span>span {
+    transition: 0.10s;
+}
+
+.links button:hover>span {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s;
+}
+
+.links button i {
+    font-size: x-large;
+    transition: 0.2s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    color: inherit;
+
+}
+#usuario{
+    font-size: 20px;
+}
+
+/*Conteudo*/
+article {
+    display: flex;
+    flex-direction: row;
+    margin-left: 211px;
+    width: 84%;
+    height: 100%;
+    top: 0;
+    transition: all 0.50s;
+    background-color: rgb(26, 26, 26);
+}
+.area-imagem {
+    width: 1120px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.area-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container para a imagem de perfil */
+.perfil-container {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+/* Imagem de perfil */
+.perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção e corta a imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+
+
+h3 {
+    display: flex;
+    font-family: "Calistoga", sans-serif;
+    position: absolute;
+    left: 380px;
+    top: 185px;
+    font-size: 30px;
+}
+
+.h2 {
+    display: flex;
+    position: absolute;
+    left: 390px;
+    top: 240px;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.F {
+    display: flex;
+    position: absolute;
+    top: 207px;
+    left: 970px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.G {
+    display: flex;
+    position: absolute;
+    top: 207px;
+    left: 850px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.S {
+    display: flex;
+    position: absolute;
+    top: 207px;
+    left: 640px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.DS a{
+    display: flex;
+    position: absolute;
+    top: 223px;
+    left: 1170px;
+    background-color: #ffbb00;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.DS a{
+    text-decoration: none;
+    color: inherit;
+    color: black;
+}
+
+.bio {
+    display: flex;
+    position: absolute;
+    top: 290px;
+    left: 250px;
+    font-size: 17px;
+}
+
+.linha {
+    border-bottom: 1px solid #ccc;
+}
+
+.Perfil {
+    padding-bottom: 205px;
+}
+
+
+
+/*Botão do usuario no fim*/
+.links button:nth-last-child(1) {
+    margin-top: 70px;
+}
+
+.perfil2-container {
+    width: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.perfil2 {
+    width: 45px;
+    height: 45px;
+    object-fit: cover; /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%; /* Isso cria um recorte circular na imagem */
+    margin-top: -6px;
+}
+
+#usuario {
+    font-size: 20px;
+}
+
+
+/*imagem*/
+.result-item.post {
+    width: 257px;
+    height: 500px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.result-item.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imagens {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    margin-left: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.imagens p {
+    margin-left: 10px;
+    font-family: "Calistoga", sans-serif;
+}
+.atualizar{
+    position: absolute;
+    top: 34%;
+    margin-left: 78%;
+}
+
+.botoes{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 13px;
+    margin-left: 980px;
+}
+
+.opcao {
+    background-color: #ffbb00;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/*Conversão*/
+@media (max-width: 1020px) {
+
+    /* Alterei "width" para "max-width" */
+    aside {
+        width: 70px;
+    }
+
+    .links button>span>span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .trans {
+        border-radius: 5px;
+        margin-left: 9px;
+    }
+
+    article {
+        margin-left: 80px;
+    }
+
+    .links button:hover>span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .logo {
+        width: 100%;
+        padding: 10% 0% 20% 0%;
+        margin-left: -4px;
+    }
+}
+
+@media (width< 1312px) {
+
+    /* Alterei "width" para "max-width" */
+    .area-imagem {
+        width: 1075px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .area-imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    article {
+        margin-left: 208px;
+    }
+
+    .conversar {
+        position: absolute;
+        left: 1180px;
+    }
+}
+@media (width< 1342px) {
+
+    /* Alterei "width" para "max-width" */
+    .area-imagem {
+        width: 1065px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .area-imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    article {
+        margin-left: 208px;
+    }
+
+    .conversar {
+        position: absolute;
+        left: 1180px;
+    }
+    /*Conversão imagens*/
+    .result-item.post {
+    width: 253px;
+    height: 480px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+    .result-item.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+    .imagens {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    margin-left: 205px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+}

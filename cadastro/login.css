@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: "Nome da Fonte", sans-serif;
+  }
+  
+  h1{
+      margin-left: 46%;
+      top: 0;
+  }
+  
+  #logo{
+      width: 8%;   
+      top: 0;
+  }
+  
+  form {
+      width: 400px;
+      margin-top: 2%;
+      margin-left: 35%;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+      background-color: #ffbb00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    #jaTenhoConta {
+      background-color: #ffbb00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }  
+
+    
+@media (width < 1366px) {
+  article{
+      margin-left: 210px;
+  }
+}

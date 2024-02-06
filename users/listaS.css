@@ -1,0 +1,231 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: "Nome da Fonte", sans-serif;
+}
+
+/*Sidebar*/
+aside {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    height: 100%;
+    align-items: flex-start;
+    width: 200px;
+    padding: 0;
+    transition: all 0.50s;
+}
+
+#logo {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    min-height: 35px;
+    margin-left: -5px;
+}
+
+.links button {
+    list-style-type: none;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.links button>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 48px;
+    padding: 7px 16px 0 9px;
+    border-radius: 24px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.links button>span>span {
+    transition: 0.10s;
+}
+
+.links button:hover>span {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s;
+}
+
+.links button i {
+    font-size: x-large;
+    transition: 0.2s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#usuario {
+    font-size: 20px;
+}
+
+/*Botão do usuario no fim*/
+.links button:nth-last-child(1) {
+    margin-top: 70px;
+}
+
+.perfil2-container {
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.perfil2 {
+    width: 45px;
+    height: 45px;
+    object-fit: cover; /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%; /* Isso cria um recorte circular na imagem */
+    margin-top: -8px;
+}
+
+#usuario {
+    font-size: 20px;
+}
+.seguidor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.perfil-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.perfil-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle; /* Alinha verticalmente a imagem no centro do contêiner */
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Conteudo*/
+article {
+    display: flex;
+    flex-direction: row;
+    margin-left: 215px;
+    width: 84%;
+    height: 100%;
+    top: 0;
+    transition: all 0.50s;
+    background-color: rgb(26, 26, 26);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+@media (max-width: 1020px) {
+
+    /* Alterei "width" para "max-width" */
+    aside {
+        width: 70px;
+    }
+
+    .links button>span>span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .trans {
+        border-radius: 5px;
+        margin-left: 9px;
+    }
+
+    article {
+        margin-left: 80px;
+    }
+
+    .links button:hover>span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .logo {
+        width: 100%;
+        padding: 10% 0% 20% 0%;
+        margin-left: -4px;
+    }
+}
+
+@media (max-width: 1366px) {
+
+    /* Alterei "width" para "max-width" */
+    .area-imagem {
+        width: 1075px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .area-imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    article {
+        margin-left: 210px;
+    }
+
+    .conversar {
+        position: absolute;
+        left: 1180px;
+    }
+
+    /*Conversão imagens*/
+    .result-item.post {
+        width: 253px;
+        height: 480px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .result-item.post img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .imagens {
+        position: relative;
+        display: inline-block;
+        top: 10px;
+        margin-left: 210px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,211 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: "Nome da Fonte", sans-serif;
+}
+
+/*Sidebar*/
+aside {
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    height: 100%;
+    align-items: flex-start;
+    width: 200px;
+    padding: 0;
+    transition: all 0.50s;
+}
+
+#logo {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    min-height: 35px;
+    margin-left: -5px;
+}
+.logar{
+    position: absolute;
+    margin-left: 1050px;
+    padding: 20px;
+}
+.login{
+    background-color: #ffbb00;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.logi{
+    background-color: #ffbb00;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.links button {
+    list-style-type: none;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.links button>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 48px;
+    padding: 7px 16px 0 9px;
+    border-radius: 24px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.links button>span>span {
+    transition: 0.10s;
+}
+
+.links button:hover>span {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s;
+}
+
+.links button i {
+    font-size: x-large;
+    transition: 0.2s;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Botão do usuario no fim*/
+.links button:nth-last-child(1) {
+    margin-top: 70px;
+}
+
+.perfil{
+width: 40px; 
+border-radius: 25px;
+margin-top: 100px;
+}
+#usuario{
+    font-size: 20px;
+}
+
+/*Conteudo*/
+article {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    top: 0;
+    transition: all 0.50s;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 0px;
+}
+.Sobre{
+    margin-left: -200px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 20px;
+}
+.lua{
+    width: 300px;
+    margin-left: 280px;
+    margin-top: 80px;
+    margin-bottom: 40px; 
+}
+.Foto{
+    width: 880px;
+    margin-left: -200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(136, 136, 136, 0.521);
+    border-radius: 20px;
+}
+.conteudo h1{
+    margin-bottom: 2px;
+}
+.conteudo p{
+    font-size: 20px;
+}
+#h1{
+    margin-left: 480px;
+    margin-top: 60px;
+    margin-bottom: -20px;
+}
+.posts{
+    margin-left: 690px;
+    margin-top: -475px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 20px;
+}
+.um{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -200px;
+}
+.conteudpsAd{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-left: -200px;
+    margin-right: 20px;
+}
+/*ajuste sidebar*/
+
+@media (width < 1020px) {
+    aside {
+        width: 70px;
+    }
+
+    .links button>span>span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .trans {
+        border-radius: 5px;
+        margin-left: 9px;
+    }
+
+    article {
+        margin-left: 80px;
+    }
+
+    .links button:hover>span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .logo {
+        width: 100%;
+        padding: 10% 0% 20% 0%;
+        margin-left: -4px;
+    }
+}
+
+@media (width < 1366px) {
+    article{
+        margin-left: 210px;
+    }
+}

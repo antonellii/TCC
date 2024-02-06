@@ -1,0 +1,240 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: "Nome da Fonte", sans-serif;
+}
+
+.posts-h1 {
+    color: white;
+    margin-left: 220px;
+}
+
+p {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Sidebar*/
+aside {
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    height: 100%;
+    align-items: flex-start;
+    width: 200px;
+    padding: 0;
+    transition: all 0.50s;
+}
+
+
+#logo {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    min-height: 35px;
+    margin-left: -5px;
+}
+
+.links button {
+    list-style-type: none;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.links button>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 48px;
+    padding: 7px 16px 0 9px;
+    border-radius: 24px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.links button>span>span {
+    transition: 0.10s;
+}
+
+.links button:hover>span {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s;
+}
+
+.links button i {
+    font-size: x-large;
+    transition: 0.2s;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Botão do usuario no fim*/
+.links button:nth-last-child(1) {
+    margin-top: 70px;
+}
+
+.perfil-container {
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.perfil2 {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%;
+    /* Isso cria um recorte circular na imagem */
+    margin-top: -8px;
+}
+
+/*Conteudo*/
+.article {
+    display: inline-flex;
+    flex-direction: row;
+    /* Mantenha "row" para exibir duas colunas */
+    margin-left: 210px;
+    width: 84%;
+    height: 100%;
+    top: 0;
+    transition: all 0.50s;
+}
+
+#usuario{
+    font-size: 20px;
+}
+
+.perfildono {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%;
+    /* Isso cria um recorte circular na imagem */
+
+}
+
+.nomedono {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: -63px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 6px 2px;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.titulosP {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 200px;
+    /* Defina o valor apropriado para o limite de largura */
+    word-wrap: break-word;
+    /* Quebra de palavra quando o texto ultrapassa o limite de largura */
+    line-height: 1.2;
+}
+
+
+.perfildono {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%;
+    /* Isso cria um recorte circular na imagem */
+
+}
+
+.nomedono {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.centro {
+    position: absolute;
+    display: flexbox;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: -63px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 6px 2px;
+    height: 45px;
+    border-radius: 20px;
+}
+
+/*ajuste sidebar*/
+
+@media (width < 1020px) {
+    aside {
+        width: 70px;
+    }
+
+    .links button>span>span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .trans {
+        border-radius: 5px;
+        margin-left: 9px;
+    }
+
+    article {
+        margin-left: 80px;
+    }
+
+    .links button:hover>span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .logo {
+        width: 100%;
+        padding: 10% 0% 20% 0%;
+        margin-left: -4px;
+    }
+}
+
+@media (width < 1366px) {
+    article {
+        margin-left: 210px;
+    }
+}

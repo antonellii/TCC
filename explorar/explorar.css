@@ -1,0 +1,294 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: "Nome da Fonte", sans-serif;
+}
+
+/*Sidebar*/
+aside {
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    height: 100%;
+    align-items: flex-start;
+    width: 200px;
+    padding: 0;
+    transition: all 0.50s;
+}
+
+#logo {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    min-height: 35px;
+    margin-left: -5px;
+}
+
+.links button {
+    list-style-type: none;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.links button>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 48px;
+    padding: 7px 16px 0 9px;
+    border-radius: 24px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.links button>span>span {
+    transition: 0.10s;
+}
+
+.links button:hover>span {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s;
+}
+
+.links button i {
+    font-size: x-large;
+    transition: 0.2s;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+.perfil-container {
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.perfil2 {
+    width: 45px;
+    height: 45px;
+    object-fit: cover; /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%; /* Isso cria um recorte circular na imagem */
+    margin-top: -8px;
+}
+
+#usuario {
+    font-size: 20px;
+}
+
+/*Conteudo*/
+article {
+    display: flex;
+    flex-direction: row;
+    margin-left: 220px;
+    width: 84%;
+    height: 100%;
+    top: 0;
+    transition: all 0.50s;
+}
+
+#tipoArt{
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 260px;
+    color: white;
+    background-color: #ffbb00;
+    border: none;
+    border-radius: 7px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*ajuste sidebar*/
+
+@media (width < 1020px) {
+    aside {
+        width: 70px;
+    }
+
+    .links button>span>span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .trans {
+        border-radius: 5px;
+        margin-left: 9px;
+    }
+
+    article {
+        margin-left: 80px;
+    }
+
+    .links button:hover>span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .logo {
+        width: 100%;
+        padding: 10% 0% 20% 0%;
+        margin-left: -4px;
+    }
+
+}
+
+@media (width < 1366px) {
+    .search-box {
+        margin-left: 130px;
+    }
+
+    article {
+        margin-left: 210px;
+    }
+}
+
+@media (width < 1366px) {
+    article {
+        margin-left: 210px;
+    }
+}
+
+/*Botão do usuario no fim*/
+.links button:nth-last-child(1) {
+    margin-top: 70px;
+}
+
+/*Resultados*/
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para o botão de alternância */
+/* ... (seus outros estilos) ... */
+
+.toggle-buttons {
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    display: flex;
+    gap: 10px;
+    /* Adiciona um espaçamento vertical entre os botões */
+}
+
+.toggle-button {
+    width: 120px;
+    height: 40px;
+    padding: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: #ffbb00;
+    transition: all 0.2s;
+    font-weight: bold;
+    border: none;
+}
+
+.toggle-button:active {
+    color: #000;
+}
+
+.toggle-button:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+/*search*/
+.search-box {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.search {
+    width: 1020px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button:active {
+    color: #000;
+}
+
+
+/* Estilos para os resultados */
+.no-result-message {
+    position: fixed;
+    display: flex;
+    top: 120px;
+    margin-left: 15px;
+}
+
+.result-item.name {
+    position: relative;
+    top: 120px;
+    margin-left: 5px;
+    display: block;
+}
+
+/*imagem*/
+.result-item.post {
+    display: inline-block;
+    width: 257px;
+    height: 500px;
+    padding: 5px;
+    margin-top: 130px;
+    margin-left: 4px;
+}
+
+.result-item.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Certifique-se de que os itens flexíveis possam quebrar linha conforme necessário */
+    gap: 5px;
+}
+
+/*Nomes:*/
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 5px;
+}
+.name a{
+    color: inherit;
+    text-decoration: none;
+}
+.direcao{
+    display: flex;
+    flex-direction: row;
+}
+.perfil3 {
+    width: 60px;
+    height: 60px;
+    object-fit: cover; /* Isso ajuda a manter a proporção da imagem */
+    border-radius: 50%; /* Isso cria um recorte circular na imagem */
+    margin-top: -8px;
+}
+.nomed{
+    margin-left: 20px;
+}
